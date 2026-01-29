@@ -16,8 +16,8 @@ const Social = () => {
         </p>
 
         <div class="images-row">
-          <img src="/images/brasserie-1.jpg" alt="Brasserie Lorraine intérieur" />
-          <img src="/images/brasserie-2.jpg" alt="Brasserie Lorraine terrasse" />
+          <img src="/assets/BL_-_logo_cofinancement_UE.png" alt="Brasserie Lorraine intérieur" />
+          <img src="/assets/BL_-_logo_ctm.jpeg" alt="Brasserie Lorraine terrasse" />
         </div>
 
         <p class="bottom-text">
