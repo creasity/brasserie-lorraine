@@ -3518,4 +3518,14 @@ h2.Reuse-title-font {
     width: 85px;
   }
 }
+.text-images-section {
+  margin: 40px;
+  text-align: center;
+  width: 80%;
+}
+.intro-text {
+  font-size: 20px;
+  line-height: 1.4em;
+  text-align: justify;
+}
 /*# sourceMappingURL=index.css.map */
