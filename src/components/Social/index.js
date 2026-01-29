@@ -8,6 +8,24 @@ const Social = () => {
 
   return (
     <div className="Social">
+
+      <section class="text-images-section">
+        <p class="intro-text">
+          Bienvenue à la Brasserie Lorraine, un lieu authentique où tradition et convivialité
+          se rencontrent autour d’une cuisine généreuse.
+        </p>
+
+        <div class="images-row">
+          <img src="/images/brasserie-1.jpg" alt="Brasserie Lorraine intérieur" />
+          <img src="/images/brasserie-2.jpg" alt="Brasserie Lorraine terrasse" />
+        </div>
+
+        <p class="bottom-text">
+          Installée au cœur de la ville, la brasserie vous accueille toute l’année pour
+          partager un moment chaleureux autour de plats emblématiques.
+        </p>
+      </section>
+
       <div className="Social-socials">
         <div className="Social-social">
           <a href={t('social_fb_link')} target="_blank" rel="noreferrer"><img src="/assets/facebook-icon.png" alt="Facebook icon" /></a>
