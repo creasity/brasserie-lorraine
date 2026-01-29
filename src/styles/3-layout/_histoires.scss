@@ -1,0 +1,307 @@
+.Histoires {
+  @extend %flex-start-center;
+  flex-direction: column;
+  margin-top: 364px;
+}
+
+.Histoires-containerMobile {
+  display: none;
+}
+
+.Histoires-container {
+  margin-top: 100px;
+  @extend %flex-between-start;
+  width: 1800px;
+  position: relative;
+}
+
+.Histoires-middleTrait {
+  width: 2px;
+  background-color: $yellow;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Histoires-left, .Histoires-right {
+  width: 49%;
+  @extend %flex-start-center;
+  flex-direction: column;
+}
+
+.Histoires-left {
+  padding-top: 200px;
+}
+.Histoires-right {
+  padding-top: 600px;
+}
+
+.Histoires-histoire {
+  width: 100%;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.Histoires-histoire-upperTrait {
+  width: 100%;
+  height: 2px;
+  width: 900px;
+  position: absolute;
+  top: -22px;
+  background-color: $yellow;
+}
+
+.Histoires-left > .Histoires-histoire > .Histoires-histoire-upperTrait {
+  left: 0px;
+}
+.Histoires-right > .Histoires-histoire > .Histoires-histoire-upperTrait {
+  right: 0px;
+}
+
+.Histoires-histoire-img-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.Histoires-histoire-img {
+  width: 100%;
+}
+
+.Histoires-histoire-date {
+  position: absolute;
+  bottom: -60px;
+  right: 0px;
+}
+
+.Histoires-histoire-description {
+  width: 62%;
+  margin-top: 20px;
+}
+
+.Histoires-histoire:not(:last-child) > .Histoires-histoire-description {
+  height: 289px;
+}
+
+@media screen and (max-width: 2000px) {
+  .Histoires-container {
+    width: 1400px;
+  }
+  
+  .Histoires-left, .Histoires-right {
+    width: 48%;
+  }
+  
+  .Histoires-left {
+    padding-top: 170px;
+  }
+  .Histoires-right {
+    padding-top: 570px;
+  }
+  
+  .Histoires-histoire {
+    margin-bottom: 60px;
+  }
+  
+  .Histoires-histoire-upperTrait {
+    width: 700px;
+    top: -33px;
+  }
+  
+  .Histoires-histoire-date {
+    bottom: -46px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .Histoires-container {
+    width: 1100px;
+  }
+  
+  .Histoires-left {
+    padding-top: 170px;
+  }
+  .Histoires-right {
+    padding-top: 570px;
+  }
+  
+  .Histoires-histoire {
+    margin-bottom: 60px;
+  }
+  
+  .Histoires-histoire-upperTrait {
+    width: 550px;
+    top: -28px;
+  }
+  
+  .Histoires-histoire-date {
+    bottom: -34px;
+  }
+
+  .Histoires-histoire-description {
+    width: 68%;
+    margin-top: 16px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .Histoires {
+    margin-top: 200px;
+  }
+
+  .Histoires-container {
+    width: 700px;
+  }
+  
+  .Histoires-left, .Histoires-right {
+    width: 48%;
+  }
+  
+  .Histoires-left {
+    padding-top: 170px;
+  }
+  .Histoires-right {
+    padding-top: 570px;
+  }
+  
+  .Histoires-histoire {
+    margin-bottom: 60px;
+    display: flex;
+    justify-self: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .Histoires-histoire-upperTrait {
+    width: 350px;
+    top: -28px;
+  }
+  
+  .Histoires-histoire-date {
+    bottom: -34px;
+    position: relative;
+    margin: 0px auto;
+    text-align: center;
+  }
+
+  .Histoires-histoire-description {
+    width: 68%;
+    margin: 60px auto 0px;
+    height: 216px;
+    text-align: center;
+  }
+
+  .Histoires-histoire:not(:last-child) > .Histoires-histoire-description {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Histoires {
+    margin-top: 140px;
+  }
+
+  .Histoires-container {
+    display: none;
+  }
+  .Histoires-containerMobile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 70vw;
+    margin-top: 70px;
+  }
+
+  .Histoires-histoireMobile {
+    width: 100%;
+    margin-bottom: 200px;
+    position: relative;
+  }
+
+  .Histoires-histoireMobile-trait {
+    background-color: $yellow;
+    position: absolute;
+  }
+
+  .Histoires-histoireMobile:not(:last-child) > .Histoires-histoireMobile-description-wrap > .Histoires-histoireMobile-bottomTrait {
+    width: 2px;
+    height: 180px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+  }
+
+  .Histoires-histoireMobile-img-rightTrait {
+    width: 2px;
+    height: 130%;
+    right: -20px;
+    top: -20px;
+  }
+  .Histoires-histoireMobile-img-leftTrait {
+    width: 2px;
+    height: 130%;
+    left: -20px;
+    top: -20px;
+  }
+  .Histoires-histoireMobile-img-upperLeftTrait {
+    width: 107.5%;
+    height: 2px;
+    top: -20px;
+    left: -20px;
+  }
+  .Histoires-histoireMobile-img-upperRightTrait {
+    width: 107.5%;
+    height: 2px;
+    top: -20px;
+    right: -20px;
+  }
+
+  .Histoires-histoireMobile-img-wrap {
+    position: relative;
+  }
+
+  .Histoires-histoireMobile-img {
+    width: 100%;
+  }
+
+  .Histoires-histoireMobile-date {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .Histoires-histoireMobile-description-wrap {
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  .Histoires-histoireMobile-description-rightTrait {
+    width: 2px;
+    height: 118%;
+    right: -20px;
+    bottom: 0;
+  }
+  .Histoires-histoireMobile-description-leftTrait {
+    width: 2px;
+    height: 118%;
+    left: -20px;
+    bottom: 0;
+  }
+  .Histoires-histoireMobile-description-bottomLeftTrait {
+    width: 100%;
+    height: 2px;
+    left: -20px;
+    bottom: 0;
+  }
+  .Histoires-histoireMobile-description-bottomRightTrait {
+    width: 100%;
+    height: 2px;
+    right: -20px;
+    bottom: 0;
+  }
+
+}

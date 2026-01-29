@@ -1,0 +1,131 @@
+.fixed-top {
+  width: 100%;
+  height: 66px;
+  background-color: transparent;
+  position: fixed;
+  top: 0px;
+  @extend %flex-center-center;
+  z-index: 4;
+}
+
+.fixed-top-app {
+  @extend %flex-between-center;
+  width: 95vw;
+  height: 66px;
+  position: relative;
+  padding: 0px;
+  margin-top: 30px;
+}
+
+.navbar-logo-container {
+  top: 0px;
+  left: 0px;
+}
+
+.navbar-logo,
+.navbar-logo-container {
+  width: auto;
+  height: 66px;
+}
+
+// ***** Burger animated ******
+.navbar-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.navbar-btn__burger {
+  width: 46px;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+.navbar-btn__burger::before,
+.navbar-btn__burger::after {
+  content: "";
+  position: absolute;
+  width: 46px;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+.navbar-btn__burger::before {
+  transform: translateY(-16px);
+}
+.navbar-btn__burger::after {
+  transform: translateY(16px);
+}
+/* ANIMATION BURGER */
+.navbar-btn.open .navbar-btn__burger {
+  transform: translateX(50px);
+  background: transparent;
+  box-shadow: none;
+}
+.navbar-btn.open .navbar-btn__burger::before {
+  transform: rotate(45deg) translate(-35px, 35px);
+}
+.navbar-btn.open .navbar-btn__burger::after {
+  transform: rotate(-45deg) translate(-35px, -35px);
+}
+
+// ***** End Burger animated ******
+
+@media screen and (max-width: 767px) {
+  .fixed-top {
+    background-color: $blackred;
+    height: 76px;
+  }
+
+  .fixed-top-app {
+    padding: 0px 30px;
+    margin-top: 0px;
+  }
+
+  .navbar-logo,
+  .navbar-logo-container {
+    width: auto;
+    height: 49px;
+  }
+
+  .navbar-btn {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+  .navbar-btn__burger {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    transition: all 0.5s ease-in-out;
+  }
+  .navbar-btn__burger::before,
+  .navbar-btn__burger::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .navbar-btn__burger::before {
+    transform: translateY(-12px);
+  }
+  .navbar-btn__burger::after {
+    transform: translateY(12px);
+  }
+}

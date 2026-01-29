@@ -1,0 +1,221 @@
+.FunZone {
+  margin-top: 270px;
+  @extend %flex-center-start;
+  height: 740px;
+}
+
+.FunZone-left {
+  @extend %flex-between-center;
+  flex-direction: column;
+  width: 800px;
+}
+
+.FunZone-left-text {
+  @extend %flex-between-start;
+  flex-direction: column;
+  height: 90px;
+}
+
+.FunZone-left-illu {
+  height: 660px;
+  margin-top: 49px;
+}
+
+.FunZone-right {
+  @extend %flex-between-start;
+  flex-direction: column;
+  width: 747px;
+  height: 100%;
+}
+
+.FunZone-right-title {
+  width: 50%;
+  align-self: center;
+  text-align: center;
+}
+
+.FunZone-right-form {
+  width: 100%;
+}
+
+#FunZoneForm {
+  width: 100%;
+  @extend %flex-between-center;
+  flex-direction: column;
+  padding-top: 73px;
+}
+
+.FunZone-right-form-input-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.FunZone-right-form-input-container:nth-child(5) {
+  margin-bottom: 60px
+}
+
+.FunZone-right-submit {
+  @extend %flex-between-start;
+  width: 70%;
+  flex-direction: column;
+  height: 78px;
+}
+
+.FunZone-right-submit-button {
+  width: 259px;
+  height: 66px;
+  background-color: #fff;
+  border: none;
+  color: $red;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0px 4px 18px rgba(0,0,0,0.58);
+  margin-right: auto;
+}
+
+.FunZone-right-submit-button:hover {
+  background-color: $yellow;
+  transition: 0.2s ease-in-out;
+}
+
+.FunZone-right-submit-button-rules {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.FunZone-right-submit-button-note {
+  line-height: 19px;
+}
+
+@media screen and (max-width: 1600px) {
+  .FunZone {
+    height: 600px;
+  }
+  
+  .FunZone-left {
+    width: 552px;
+  }
+  
+  .FunZone-left-text {
+    height: 62px;
+  }
+  
+  .FunZone-left-illu {
+    height: 503px;
+    margin-top: 29px;
+  }
+  
+  .FunZone-right {
+    width: 515px;
+  }
+  
+  #FunZoneForm {
+    padding-top: 40px;
+  }
+
+  .FunZone-right-form-input-container:nth-child(5) {
+    margin-bottom: 40px
+  }
+
+  .FunZone-right-submit {
+    height: 86px;
+  }
+  
+  .FunZone-right-submit-button {
+    width: 179px;
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .FunZone {
+    height: 1273px;
+    flex-direction: column;
+    margin-top: 200px;
+    align-items: center;
+  }
+
+  .FunZone-left {
+    width: 612px;
+  }
+
+  .FunZone-left-title {
+    margin-bottom: 11px;
+  }
+
+  .FunZone-left-text {
+    align-items: center;
+  }
+
+  .FunZone-left-illu {
+    height: 477px;
+    margin-top: 70px;
+  }
+  
+  .FunZone-right {
+    margin-top: 84px;
+    align-items: center;
+  }
+
+  .FunZone-right-title {
+    width: 53%;
+  }
+
+  .FunZone-right-submit {
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .FunZone-right-submit-button {
+    width: 259px;
+    height: 66px;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .FunZone {
+    height: 987px;
+    margin-top: 230px;
+  }
+
+  .FunZone-left {
+    width: 306px;
+    text-align: center;
+  }
+
+  .FunZone-left-title {
+    margin-bottom: 6px;
+    width: 70%;
+  }
+  .FunZone-left-desc {
+    margin-bottom: 6px;
+    width: 58%;
+  }
+  .FunZone-left-illu {
+    height: 280px;
+    margin-top: 84px;
+  }
+
+  .FunZone-right {
+    margin-top: 42px;
+    width: 90%;
+  }
+
+  .FunZone-right-title {
+    width: 83%;
+  }
+
+  .FunZone-right-submit-button {
+    height: 156px;
+    margin: 0px auto;
+  }
+
+  .FunZone-right-submit-button {
+    width: 193px;
+    height: 55px;
+  }
+  .FunZone-right-submit>p {
+    line-height: 15px;
+  }
+}

@@ -1,0 +1,14 @@
+#root {
+  @extend %flex-center-center;
+}
+
+.app {
+  @extend %flex-center-center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.app.app-filter {
+  overflow-y: hidden;
+  height: 100vh;
+}

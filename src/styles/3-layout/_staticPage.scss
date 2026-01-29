@@ -1,0 +1,40 @@
+.StaticPage {
+  text-align: left;
+  padding-top: 100Px;
+  position: relative;
+}
+
+.StaticPage-back {
+  height: 100px;
+  position: fixed;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  background-color: $red;
+  @extend %flex-center-center;
+}
+
+.StaticPage-back > .StaticPage-back-button {
+  height: 50px;
+  padding: 0px 20px;
+  background-color: #fff;
+  border: none;
+  color: $red;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0px 4px 18px rgba(0,0,0,0.58);
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.StaticPage-back > .StaticPage-back-button:hover {
+  background-color: $yellow;
+  transition: 0.2s ease-in-out;
+}
+.StaticPage-back > .StaticPage-back-button > a {
+  color: $red;
+  background-color: transparent;
+}
+
+.react-pdf__Page__canvas {
+  margin: 0 auto;
+}

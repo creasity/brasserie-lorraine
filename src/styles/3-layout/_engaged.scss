@@ -1,0 +1,74 @@
+.Engaged {
+  margin: 350px auto 0px;
+  width: 1160px;
+  @extend %flex-start-center;
+  flex-direction: column;
+}
+
+.Engaged-P {
+  text-align: justify;
+}
+
+.Engaged-firstP {
+  margin-top: 70px;
+}
+
+.Engaged-secondP {
+  margin-top: 40px;
+}
+
+.Engaged-thirdP {
+  margin-bottom: 40px;
+}
+
+.Engaged-img-wrap {
+  margin: 50px auto;
+  width: 100%;
+  @extend %flex-between-center;
+}
+
+.Engaged-img-wrap > img {
+  width: 157px;
+}
+
+@media screen and (max-width: 1500px) {
+  .Engaged {
+    width: 700px;
+    margin-top: 160px;
+  }
+  .Engaged-img-wrap {
+    width: 100%;
+  }
+  .Engaged-img-wrap > img {
+    width: 90px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Engaged {
+    margin: 0px auto 0px;
+    width: 90%;
+  }
+  
+  .Engaged-firstP {
+    margin-top: 40px;
+  }
+  
+  .Engaged-secondP {
+    margin-top: 20px;
+  }
+  
+  .Engaged-thirdP {
+    margin-bottom: 20px;
+  }
+  
+  .Engaged-img-wrap {
+    margin: 25px auto;
+    flex-wrap: nowrap;
+  }
+
+  .Engaged-img-wrap > img {
+    width: 13%;
+  }
+  
+}

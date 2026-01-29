@@ -1,0 +1,181 @@
+.Filter {
+  width: 100%;
+  height: 100vh;
+  background-color: $red;
+  position: absolute;
+  top: 0px;
+  z-index: 5;
+  left: 50%;
+  transform: translateX(-50%);
+  @extend %flex-center-center;
+  flex-direction: column;
+  transition: 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+.Filter-wrap {
+  @extend %flex-start-center;
+  flex-direction: column;
+}
+
+.Filter-off {
+  top: -100vh;
+  transition: 0.2s ease-in-out;
+}
+
+.Filter > p, .Filter > div, .Filter > button {
+  position: relative;
+  z-index: 7;
+}
+
+.Filter-background {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 6;
+  left: 0px;
+}
+
+.Filter-logo {
+  width: 250px;
+  position: relative;
+  z-index: 7;
+}
+
+.Filter-slogan {
+  margin-top: 40px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.Filter-inputs {
+  margin: 100px 0px 30px 0px;
+  @extend %flex-between-center;
+  width: 1000px;
+}
+
+.Filter-input {
+  width: 200px;
+  height: 300px;
+  text-align: center;
+  background-color: transparent;
+  border-bottom: 10px white solid;
+}
+
+.Filter-input-focused {
+  border-color: $yellow;
+}
+
+.Filter-indication {
+  margin-bottom: 80px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.Filter-submit-button {
+  width: 320px;
+  height: 95px;
+  transition: 0.2s ease-in-out;
+}
+
+.Filter-submit-button.OFF {
+  color: $yellow;
+  border: 7px solid $yellow;
+  cursor: not-allowed;
+  background-color: transparent;
+}
+
+.Filter-submit-button.ON {
+  color: $blackred;
+  background-color: white;
+  border: none;
+}
+
+.Filter-submit-button.ON:hover {
+  background-color: $yellow;
+}
+
+@media screen and (max-width: 1900px) {
+  .Filter-logo {
+    width: 125px;
+  }
+  
+  .Filter-slogan {
+    margin-top: 25px;
+    line-height: 30px;
+  }
+  
+  .Filter-inputs {
+    margin: 0px  0px 30px 0px;
+  }
+  
+  .Filter-indication {
+    margin-bottom: 60px;
+    text-transform: uppercase;
+  }
+  
+  .Filter-submit-button {
+    width: 200px;
+    height: 63px;
+  }
+  
+  .Filter-submit-button.OFF {
+    border: 4px solid $yellow;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .Filter-logo {
+    width: 100px;
+  }
+  
+  .Filter-slogan {
+    margin-top: 20px;
+    line-height: 25px;
+  }
+  
+  .Filter-inputs {
+    width: 700px;
+  }
+  
+  .Filter-input {
+    width: 140px;
+    height: 180px;
+    border-bottom: 7px white solid;
+  }
+  
+  .Filter-indication {
+    margin-bottom: 50px;
+  }
+  
+  .Filter-submit-button {
+    width: 180px;
+    height: 56px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Filter-logo {
+    width: 125px;
+  }
+  
+  .Filter-inputs {
+    width: 100%;
+  }
+  
+  .Filter-input {
+    width: 23%;
+    height: 77px;
+    border-bottom: 3px white solid;
+  }
+  
+  .Filter-indication {
+    margin-bottom: 50px;
+  }
+  
+  .Filter-submit-button {
+    width: 180px;
+    height: 56px;
+  }
+}

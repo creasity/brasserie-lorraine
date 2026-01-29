@@ -1,0 +1,90 @@
+.Menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: $blackred;
+  position: fixed;
+  top: -100vh;
+  transition: 0.5s ease-in-out;
+  @extend %flex-center-start;
+  z-index: 3;
+}
+
+.Menu.open {
+  top: 0vh;
+  transition: 0.5s ease-in-out;
+}
+
+.Menu-wrap {
+  height: 90%;
+  margin-top: 2%;
+  @extend %flex-between-center;
+  flex-direction: column;
+}
+
+.Menu-title {
+  height: 10%;
+  @extend %flex-center-center;
+  flex-direction: column;
+  position: relative;
+}
+
+.Menu-title::before {
+  content: '';
+  width: 204px;
+  height: 3px;
+  position: absolute;
+  bottom: 0px;
+  background-color: $yellow;
+}
+
+.Menu-title-font {
+  cursor: pointer;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.Menu-title-font:hover {
+  color: $yellow;
+  transition: 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 1800px) {
+  /* .Menu-wrap {
+    height: 600px;
+    margin-top: 30px;
+  } */
+
+  .Menu-title {
+    height: 90px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Menu {
+    height: 93vh;
+  }
+  .Menu.open {
+    top: 76px;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .Menu-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .Menu-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .Menu-title::before {
+    content: '';
+    width: 80px;
+  }
+}

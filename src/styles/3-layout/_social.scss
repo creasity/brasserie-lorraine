@@ -1,0 +1,92 @@
+.Social {
+  @extend %flex-between-center;
+  flex-direction: column;
+  height: 306px;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.Social-socials {
+  @extend %flex-between-center;
+  width: 150px;
+}
+
+.Social-social {
+  position: relative;
+  cursor: pointer;
+}
+
+.Social-social, .Social-social > a > img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+}
+
+.Social-social > a > img {
+  position: absolute;
+  top: 0px;
+}
+
+.Social-social > a:last-child > img {
+  opacity: 0;
+}
+
+.Social-social:hover > a:last-child > img {
+  opacity: 1;
+}
+.Social-social:hover > a:first-child > img {
+  opacity: 0;
+}
+
+.Social-politics {
+  @extend %flex-between-center;
+  flex-direction: column;
+  height: 80px;
+}
+
+.Social-politics > p {
+  cursor: pointer;
+}
+
+.Social-politics > p:hover {
+  text-decoration: underline;
+}
+
+.Contact-btn {
+  width: 325px;
+  height: 75px;
+  background-color: #fff;
+  border: none;
+  color: #cc221d;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0px 4px 18px rgba(0,0,0,0.58);
+  font-size: 27px;
+  margin-top: 20px;
+}
+
+.Contact-btn:hover {
+  background-color: #d6bc78;
+  transition: 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 1200px) {
+  .Social {
+    margin-bottom: 85px;
+    height: 310px;
+  }
+}
+
+.Social-politics p {
+  margin-top: 10px;
+}
+
+.footer-logo {
+  margin-top:50px;
+  text-align: center;
+  }
+
+.logo{
+  max-height: 80px;
+  margin: 10px 20px;
+}

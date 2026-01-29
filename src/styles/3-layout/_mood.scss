@@ -1,0 +1,155 @@
+.Mood {
+  @extend %flex-center-center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 79px;
+  position: relative;
+}
+
+.Mood > video {
+  width: 1920px;
+}
+
+.Mood-title {
+  position: absolute;
+  top: -35px;
+  z-index: 2;
+  text-shadow: none;
+}
+
+.Mood-note {
+  position: absolute;
+  text-align: center;
+  bottom: -39px;
+  width: 1920px;
+}
+
+.Mood-iconScroll {
+  width: 40px;
+  height: 70px;
+  @extend %flex-center-center;
+  position: absolute;
+  bottom: -130px;
+  animation: iconScroll 2s linear 2s infinite alternate;
+}
+
+.Mood-iconScroll.stopAnimScroll {
+  animation: none;
+}
+
+.Mood-iconScroll, .Mood > video {
+  opacity: 0;
+  transition: 0.8s ease-in-out opacity;
+}
+.Mood-iconScroll.opacity1, .Mood > video.opacity1 {
+  opacity: 1;
+  transition: 0.8s ease-in-out opacity;
+}
+
+.ml16 {
+  overflow: hidden;
+  opacity: 0;
+}
+.ml16.opacity1 {
+  opacity: 1;
+}
+
+.ml16 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml16 .letter:nth-child(1),
+.ml16 .letter:nth-child(4),
+.ml16 .letter:nth-child(5),
+.ml16 .letter:nth-child(6),
+.ml16 .letter:nth-child(7),
+.ml16 .letter:nth-child(10),
+.ml16 .letter:nth-child(11),
+.ml16 .letter:nth-child(12),
+.ml16 .letter:nth-child(13),
+.ml16 .letter:nth-child(14),
+.ml16 .letter:nth-child(15),
+.ml16 .letter:nth-child(16),
+.ml16 .letter:nth-child(17),
+.ml16 .letter:nth-child(18) {
+  color: $yellow;
+}
+
+@keyframes iconScroll {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(50%);
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  .Mood > video, .Mood-note {
+    width: 1520px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .Mood > video, .Mood-note {
+    width: 81%;
+  }
+
+  .Mood-title {
+    top: -25px;
+  }
+
+  .Mood-note {
+    bottom: -52px;
+  }
+
+  .Mood-iconScroll {
+    bottom: -145px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .Mood {
+    margin-top: 116px;
+  }
+
+  .Mood-note {
+    font-size: 14px;
+    bottom: -58px;
+  }
+
+  .Mood > video, .Mood-note {
+    width: 80%;
+  }
+
+  .Mood-iconScroll {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Mood {
+    margin-top: 182px;
+  }
+
+  .Mood-note {
+    font-size: 12px;
+    width: 90%;
+    bottom: -58px;
+  }
+
+  .Mood > video {
+    width: 100%;
+  }
+
+  .Mood-title {
+    top: -38px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Mood-note {
+    bottom: -108px;
+  }
+}
