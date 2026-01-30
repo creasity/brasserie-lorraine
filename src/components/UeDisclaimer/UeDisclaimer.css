@@ -18,10 +18,10 @@
 }
 
 .before-social-images img {
-  width: 50%;
-  height: 320px;
-  object-fit: cover;
-  border-radius: 8px;
+  height: 100px;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Responsive */
