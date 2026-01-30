@@ -16,6 +16,7 @@ import FunZone from '../../containers/FunZone';
 import Histoires from '../../containers/Histoires';
 import Engaged from '../Engaged';
 import Reuse from '../Reuse/index';
+import Social from '../before-social';
 import Social from '../Social';
 import Warning from '../Warning';
 import Filter from '../../containers/Filter';
