@@ -1,7 +1,7 @@
 import React from "react";
-import "./BeforeSocialSection.css";
+import "./UeDisclaimer.css";
 
-export default function BeforeSocialSection() {
+export default function UeDisclaimer() {
   return (
     <section className="before-social-section">
       <p className="before-social-intro">
