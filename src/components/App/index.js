@@ -347,6 +347,7 @@ const App = ({ displayFilter, isInitLang, initLang }) => {
         <Histoires />
         <Engaged />
         <Reuse />
+        <before-social />
         <Social />
         <Warning />
       </Route>
