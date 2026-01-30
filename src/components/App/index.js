@@ -16,7 +16,7 @@ import FunZone from '../../containers/FunZone';
 import Histoires from '../../containers/Histoires';
 import Engaged from '../Engaged';
 import Reuse from '../Reuse/index';
-import Social from '../before-social';
+import UeDisclaimer from '../UeDisclaimer';
 import Social from '../Social';
 import Warning from '../Warning';
 import Filter from '../../containers/Filter';
@@ -347,7 +347,7 @@ const App = ({ displayFilter, isInitLang, initLang }) => {
         <Histoires />
         <Engaged />
         <Reuse />
-        <before-social />
+        <UeDisclaimer />
         <Social />
         <Warning />
       </Route>
