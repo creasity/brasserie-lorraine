@@ -14,6 +14,7 @@ export default function UeDisclaimer() {
 		  <img src="/assets/Photo-chaine-de-prod.jpg" alt="..." style={{ flex: '1 1 150px', objectFit: 'cover', maxWidth: '100%' }} />
 		  <img src="/assets/bottles_enhanced_8k.jpg" alt="..." style={{ flex: '1 1 150px', objectFit: 'cover', maxWidth: '100%' }} />
 		</div>
+		<br></br>
       <p>
           Pour la période de janvier 2023 à décembre 2024, ce dispositif représente un montant de 972 258,46€.
            Ce soutien est rendu possible grâce au cofinancement de l’Union européenne et de la Collectivité Territoriale de Martinique, dans le cadre du Programme Opérationnel Martinique 2021-2027, illustrant l’engagement des institutions en faveur du développement économique local.
