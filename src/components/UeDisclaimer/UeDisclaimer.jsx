@@ -9,10 +9,10 @@ export default function UeDisclaimer() {
           Face aux surcoûts liés à l’éloignement géographique et au transport maritime, l’aide au fret UE constitue un appui déterminant. Elle contribue à atténuer les charges liées à l’importation des matières premières indispensables à notre production et facilite l’exportation de nos créations vers le marché européen.
           C’est un véritable coup de pouce pour notre activité : nous pouvons continuer à produire avec passion, renforcer notre compétitivité et valoriser la production martiniquaise sur le marché national.
       </p>
-		<div style={{ display: 'flex', gap: '16px', marginTop: '24px', flexWrap: 'wrap', justifyContent: 'center', maxWidth: '600px', margin: '24px auto 0' }}>
-		  <img src="/assets/La-fabrication-de-la-biere-_-ingredient-malt-dorge (1).jpg" alt="..." style={{ flex: '1 1 150px', objectFit: 'cover', maxWidth: '100%' }} />
-		  <img src="/assets/Photo-chaine-de-prod.jpg" alt="..." style={{ flex: '1 1 150px', objectFit: 'cover', maxWidth: '100%' }} />
-		  <img src="/assets/bottles_enhanced_8k.jpg" alt="..." style={{ flex: '1 1 150px', objectFit: 'cover', maxWidth: '100%' }} />
+		<div className="before-social-photos">
+		  <img src="/assets/La-fabrication-de-la-biere-_-ingredient-malt-dorge (1).jpg" alt="Fabrication de la bière" />
+		  <img src="/assets/Photo-chaine-de-prod.jpg" alt="Chaîne de production" />
+		  <img src="/assets/bottles_enhanced_8k.jpg" alt="Bouteilles Brasserie Lorraine" />
 		</div>
 		<br></br>
       <p>
