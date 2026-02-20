@@ -1,25 +1,3 @@
-.pbmit-max-mega-menu-override #page #site-navigation .mega-menu-wrap > ul > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column ul:not(.menu) > li {
-  padding: 0 !important;
-}
-.mega-has-icon, .mega-sub-menu li {
-  padding: 0 25px !important;
-}
-.mega-menu-item {
-  margin: 0 !important;
-}
-.mega-custom-icon.mega-menu-link {
-  margin: 0 !important;
-}
-.pbmit-max-mega-menu-override #page #site-navigation .mega-menu-wrap > ul > li a {
-	color: #000 !important;
-	padding: 8px 25px !important;
-	height: auto !important;
-	display: block;
-}
-
-
-
-
 import React from "react";
 import "./UeDisclaimer.css";
 
