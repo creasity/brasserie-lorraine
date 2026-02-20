@@ -1,3 +1,25 @@
+.pbmit-max-mega-menu-override #page #site-navigation .mega-menu-wrap > ul > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column ul:not(.menu) > li {
+  padding: 0 !important;
+}
+.mega-has-icon, .mega-sub-menu li {
+  padding: 0 25px !important;
+}
+.mega-menu-item {
+  margin: 0 !important;
+}
+.mega-custom-icon.mega-menu-link {
+  margin: 0 !important;
+}
+.pbmit-max-mega-menu-override #page #site-navigation .mega-menu-wrap > ul > li a {
+	color: #000 !important;
+	padding: 8px 25px !important;
+	height: auto !important;
+	display: block;
+}
+
+
+
+
 import React from "react";
 import "./UeDisclaimer.css";
 
@@ -8,9 +30,13 @@ export default function UeDisclaimer() {
           La Brasserie Lorraine s’inscrit depuis toujours dans l’histoire industrielle de la Martinique, avec un savoir-faire reconnu dans la production de bières et de boissons maltées. Nous sommes attachés à une fabrication locale de qualité, et œuvrons chaque jour à faire vivre cette tradition tout en accompagnant le développement de nouvelles saveurs et la diffusion de nos produits au-delà du territoire.
           Face aux surcoûts liés à l’éloignement géographique et au transport maritime, l’aide au fret UE constitue un appui déterminant. Elle contribue à atténuer les charges liées à l’importation des matières premières indispensables à notre production et facilite l’exportation de nos créations vers le marché européen.
           C’est un véritable coup de pouce pour notre activité : nous pouvons continuer à produire avec passion, renforcer notre compétitivité et valoriser la production martiniquaise sur le marché national.
-          (Photo de matières premières)
-          (Photo de la chaîne de production de l’usine)
-          (Photo de produits finis embouteillés)
+      </p>
+			<div style={{ display: 'flex', gap: '16px', marginTop: '24px', flexWrap: 'wrap' }}>
+			  <img src="/assets/La-fabrication-de-la-biere-_-ingredient-malt-dorge (1).jpg" alt="..." style={{ flex: '1 1 200px', objectFit: 'cover'}} />
+			  <img src="/assets/Photo-chaine-de-prod.jpg" alt="..." style={{ flex: '1 1 200px', objectFit: 'cover' }} />
+			  <img src="/assets/bottles_enhanced_8k.jpg" alt="..." style={{ flex: '1 1 200px', objectFit: 'cover' }} />
+			</div>
+      <p>
           Pour la période de janvier 2023 à décembre 2024, ce dispositif représente un montant de 972 258,46€.
            Ce soutien est rendu possible grâce au cofinancement de l’Union européenne et de la Collectivité Territoriale de Martinique, dans le cadre du Programme Opérationnel Martinique 2021-2027, illustrant l’engagement des institutions en faveur du développement économique local.
 
